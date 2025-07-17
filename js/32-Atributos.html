@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atributos</title>
+</head>
+
+<body>
+
+  <a href="https://google.com.br" target="_blank">Clique aqui</a>
+  <button onclick="alterarLink()">Alterar link</button>
+
+  <!-- JS -->
+  <script>
+
+    function alterarLink() {
+      let link = document.getElementsByTagName('a')[0]
+
+      link.href = 'https://youtube.com'
+    }
+
+  </script>
+</body>
+
+</html>

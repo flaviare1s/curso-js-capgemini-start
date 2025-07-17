@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seletor Id</title>
+</head>
+
+<body>
+
+  <input type="text" id="campo">
+
+  <button onclick="acao()">Exibir Conteúdo</button>
+
+  <!-- JS -->
+  <script>
+
+    function acao() {
+      let campo = document.getElementById('campo')
+
+      alert(campo.value)
+
+      campo.value = ''
+    }
+
+  </script>
+</body>
+
+</html>

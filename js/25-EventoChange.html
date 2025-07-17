@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evento Change</title>
+</head>
+
+<body>
+  <select id="cursos" onchange="mensagem()">
+    <option value="">Escolha seu curso</option>
+    <option value="HTML">HTML</option>
+    <option value="CSS">CSS</option>
+    <option value="JavaScript">JavaScript</option>
+  </select>
+  <!-- JS -->
+  <script>
+
+    function mensagem() {
+      let curso = document.getElementById('cursos').value
+      alert(`Escolheu o curso ${curso}`)
+    }
+
+  </script>
+</body>
+
+</html>
