@@ -4,13 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estrutura Base - jQuery</title>
+  <title>Alterar Atributos - jQuery</title>
   <script src="jquery.min.js"></script>
   <script>
 
     // Ao carregar o documento
     $(document).ready(function () {
-
+      $('img').attr({
+        'width': '700',
+        'title': 'Dogs'
+      })
     })
 
   </script>
@@ -18,7 +21,7 @@
 
 <body>
 
-
+  <img width="50" title="Cachorros" src="./dogs.jpg" alt="Dois cachorrinhos">
 
 </body>
 

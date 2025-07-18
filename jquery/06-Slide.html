@@ -4,12 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estrutura Base - jQuery</title>
+  <title>Slide - jQuery</title>
   <script src="jquery.min.js"></script>
   <script>
 
     // Ao carregar o documento
     $(document).ready(function () {
+
+      $('.ocultar').click(() => {
+        $('.mensagem').slideUp(500)
+      })
+
+      $('.exibir').click(() => {
+        $('.mensagem').slideDown(500)
+      })
 
     })
 
@@ -18,7 +26,12 @@
 
 <body>
 
+  <h2 class="exibir">Exibir</h2>
+  <h2 class="ocultar">Ocultar</h2>
 
+  <hr>
+
+  <h1 class="mensagem">Olá!</h1>
 
 </body>
 

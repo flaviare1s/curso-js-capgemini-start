@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exibir e Ocultar - jQuery</title>
+  <script src="jquery.min.js"></script>
+  <script>
+
+    // Ao carregar o documento
+    $(document).ready(function () {
+      $('#ocultar').click(() => {
+        $('img').hide()
+      })
+    })
+
+    $(document).ready(function () {
+        $('#exibir').click(() => {
+          $('img').show()
+        })
+      })
+
+  </script>
+</head>
+
+<body>
+
+  <button id="exibir">Exibir</button>
+  <button id="ocultar">Ocultar</button>
+
+  <br>
+
+  <img src="./dogs.jpg" alt="Dois cachorrinhos">
+
+</body>
+
+</html>

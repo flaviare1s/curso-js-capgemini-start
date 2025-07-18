@@ -4,13 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estrutura Base - jQuery</title>
+  <title>Eventos - jQuery</title>
   <script src="jquery.min.js"></script>
   <script>
 
     // Ao carregar o documento
     $(document).ready(function () {
-
+      // Evento de clique
+      $('button').click(function() {
+        $('h1').html('Você clicou no botão!')
+      })
     })
 
   </script>
@@ -18,7 +21,8 @@
 
 <body>
 
-
+  <h1></h1>
+  <button>Clique aqui</button>
 
 </body>
 
